@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - name: Execute a bash command
-      run: ls
+      run: tensorflow/tools/ci_build/ci_build.sh cpu.arm64 bash tensorflow/tools/ci_build/rel/ubuntu/cpu_arm64_py39_pip.sh
       shell: bash
 
   test:
